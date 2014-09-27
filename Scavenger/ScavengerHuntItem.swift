@@ -6,4 +6,18 @@
 //  Copyright (c) 2014 Xinyun (Victor) Zhao. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ScavengerHuntItem: NSObject {
+    let name: String
+    var photo: UIImage?
+    var isComplete: Bool {
+        get{
+            return photo != nil
+        }
+    }
+    init(name: String){
+      self.name = name
+    }
+    
+}

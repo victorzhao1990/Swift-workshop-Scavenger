@@ -13,6 +13,8 @@
 		E85B990F19D21F1600B120BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85B990E19D21F1600B120BA /* Images.xcassets */; };
 		E85B991219D21F1600B120BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E85B991019D21F1600B120BA /* LaunchScreen.xib */; };
 		E85B991E19D21F1600B120BA /* ScavengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B991D19D21F1600B120BA /* ScavengerTests.swift */; };
+		E85B992819D2250C00B120BA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B992719D2250C00B120BA /* ListViewController.swift */; };
+		E85B992A19D2470D00B120BA /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B992919D2470D00B120BA /* ScavengerHuntItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		E85B991719D21F1600B120BA /* ScavengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScavengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85B991C19D21F1600B120BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E85B991D19D21F1600B120BA /* ScavengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengerTests.swift; sourceTree = "<group>"; };
+		E85B992719D2250C00B120BA /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = ../ListViewController.swift; sourceTree = "<group>"; };
+		E85B992919D2470D00B120BA /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		E85B990419D21F1500B120BA /* Scavenger */ = {
 			isa = PBXGroup;
 			children = (
+				E85B992919D2470D00B120BA /* ScavengerHuntItem.swift */,
+				E85B992719D2250C00B120BA /* ListViewController.swift */,
 				E85B990719D21F1500B120BA /* AppDelegate.swift */,
 				E85B990919D21F1600B120BA /* ViewController.swift */,
 				E85B990B19D21F1600B120BA /* Main.storyboard */,
@@ -161,9 +167,11 @@
 				TargetAttributes = {
 					E85B990119D21F1500B120BA = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = BRN3YKJX6R;
 					};
 					E85B991619D21F1600B120BA = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = BRN3YKJX6R;
 						TestTargetID = E85B990119D21F1500B120BA;
 					};
 				};
@@ -214,6 +222,8 @@
 			files = (
 				E85B990A19D21F1600B120BA /* ViewController.swift in Sources */,
 				E85B990819D21F1600B120BA /* AppDelegate.swift in Sources */,
+				E85B992A19D2470D00B120BA /* ScavengerHuntItem.swift in Sources */,
+				E85B992819D2250C00B120BA /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +368,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -369,6 +381,7 @@
 				INFOPLIST_FILE = ScavengerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scavenger.app/Scavenger";
 			};
 			name = Debug;
@@ -377,6 +390,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -384,6 +399,7 @@
 				INFOPLIST_FILE = ScavengerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scavenger.app/Scavenger";
 			};
 			name = Release;
@@ -407,6 +423,7 @@
 				E85B992319D21F1600B120BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E85B992419D21F1600B120BA /* Build configuration list for PBXNativeTarget "ScavengerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +432,7 @@
 				E85B992619D21F1600B120BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
